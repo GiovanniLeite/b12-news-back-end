@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+    news_strapi:
+        container_name: news_strapi
+        hostname: news_strapi
+        image: postgres
+        restart: always
+        environment:
+            POSTGRES_PASSWORD: password
+            POSTGRES_DB: news-strapi
+            PGDATA: /var/lib/postgresql1/data/pgdata
+        volumes:
+            - ~/.PostgressData/postgresonly/news_strapi:/var/lib/postgresql/data/pgdata
+        ports:
+            - 5432:5432
