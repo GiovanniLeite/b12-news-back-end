@@ -20,7 +20,7 @@
       "type": "string",
       "required": true
     },
-    "feedPostHeader": {
+    "topic": {
       "type": "string",
       "required": true
     },
@@ -28,7 +28,7 @@
       "type": "richtext",
       "required": true
     },
-    "emphasis": {
+    "featured": {
       "type": "boolean",
       "default": false,
       "required": true
